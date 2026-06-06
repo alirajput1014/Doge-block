@@ -1,35 +1,44 @@
-﻿# Doge block
+# Doge-block (3D Physics Puzzle Game)
 
-A Unity game project maintained as a clean, cloneable Git repository.
+A dynamic and fast-paced 3D physics-based puzzle/action game built using **Unity 6 (6000.0.41f1)**. The game challenges players with strategic positioning, physics-based block interactions, and responsive grid layouts, all packaged inside a stylized 3D environment.
 
-## Project Overview
+---
 
-- Engine: Unity 6000.0.41f1
-- Source assets: Assets/
-- Package manifest: Packages/manifest.json
-- Project settings: ProjectSettings/
+## 🚀 Key Features
 
-## Repository Setup
+* **Unity 6 Engine Native:** Optimized using the latest performance enhancement pipelines and graphics handling features of Unity 6000.0.41f1.
+* **3D Physics-Driven Mechanics:** Smooth handling of 3D physical materials, rigidbodies, and gravity-defying block interactions.
+* **Algorithmic Board & Grid Operations:** Custom array data and computational logic to seamlessly handle cell tracking, block configurations, and clearance updates.
+* **Production-Grade Infrastructure:** Configured with active asset tracking via Git LFS for binary asset stability and strict `.meta` file persistence.
 
-This repository is configured for Unity development:
+---
 
-- Unity-generated folders such as Library/, Temp/, Logs/, Obj/, and build outputs are ignored.
-- Large binary assets are tracked with Git LFS.
-- Unity .meta files are preserved to keep asset references stable.
+## 📂 Project Architecture & Script Breakdown
 
-## Clone Instructions
+The codebase splits responsibilities between core gameplay management, grid alignment, and dynamic asset handling inside the `Assets/` directory:
 
-Install Git LFS before cloning:
+### ⚙️ Core Management & Grid Systems
+* **`BlockController.cs` / Player Actions:** Handles inputs for moving, rotating, or launching blocks inside the 3D space with precise boundary constraints.
+* **`GridSystem3D.cs`**: Automatically structures the game's arena matrix, validating cell availability and tracking filled rows or columns for core score loops.
 
-`powershell
-git lfs install
-git clone <repository-url>
-`
+### 🐕 Theme & Interaction Elements
+* **`DogeElement.cs`**: Manages specialized physics interactions or point multipliers linked directly with theme-specific blocks.
+---
 
-Open the cloned folder with Unity 6000.0.41f1 or a compatible Unity Editor version.
+## 🎮 Controls
 
-## Development Notes
+* **Move Block:** Use `W`, `A`, `S`, `D` or the **Arrow Keys** to shift the block positions laterally across the 3D grid.
 
-- Commit source files, scenes, prefabs, scripts, package files, and project settings.
-- Do not commit generated Unity cache folders or local IDE files.
-- Keep asset .meta files together with their matching assets.
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+* **Unity Hub & Editor:** Version **6000.0.41f1** or a compatible modern Unity 6 release.
+* **Git Tools:** Git Large File Storage (**Git LFS**) installed globally.
+
+### Installation & Setup
+
+1. **Initialize Git LFS** on your system before cloning binary asset configurations:
+   ```bash
+   git lfs install
