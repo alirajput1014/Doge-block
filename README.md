@@ -3,6 +3,13 @@
 A dynamic and fast-paced 3D physics-based puzzle/action game built using **Unity 6 (6000.0.41f1)**. The game challenges players with strategic positioning, physics-based block interactions, and responsive grid layouts, all packaged inside a stylized 3D environment.
 
 ---
+## 🎬 Gameplay Demo
+
+[![Watch Gameplay Demo](https://drive.google.com/thumbnail?id=1STUpn9u1TOY-0zQmfmFxmA_QnaM9Eo3r&sz=w800)](https://drive.google.com/file/d/1STUpn9u1TOY-0zQmfmFxmA_QnaM9Eo3r/view?usp=sharing)
+
+> *Click the thumbnail above to watch the full gameplay demo.*
+
+---
 
 ## 🚀 Key Features
 
